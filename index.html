@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IrmaHijab.Daily - Koleksi Hijab Terbaik</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container header-content">
+        <div class="logo">IRMAHIJAB.<span class="logo-daily">DAILY</span></div>
+        <nav>
+          <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="#tentang-kami">Tentang Kami</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </nav>
+        <div class="header-icons">
+          <span class="icon cart-icon" id="cartIcon" onclick="toggleCartModal()"
+            >🛒</span
+          >
+          <span class="cart-badge" id="cartBadge">0</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-section">
+      <div class="container hero-content">
+        <h1>Mari Tampil Mempesona</h1>
+        <h2>Koleksi Hijab Premium untuk Aktivitas Harian Anda.</h2>
+        <a href="#produk" class="cta-button">Lihat Koleksi</a>
+      </div>
+    </section>
+
+    <section id="produk" class="product-section">
+      <div class="container">
+        <h3>Koleksi Pilihan IrmaHijab.Daily</h3>
+        <p class="subtitle">
+          Temukan hijab yang sesuai dengan gaya dan kebutuhan Anda.
+        </p>
+
+        <div class="product-grid">
+          <div
+            class="product-card"
+            data-product-id="P001"
+            data-product-name="Hijab Paris"
+            data-product-price="20000"
+          >
+            <img
+              src="images/hijab-paris.jpg"
+              alt="Hijab Paris"
+              class="product-image"
+            />
+            <h4 class="product-name">Hijab Paris</h4>
+            <p class="product-price">Rp 20.000</p>
+            <div class="color-options">
+              <div
+                class="color-dot active"
+                style="background-color: black"
+                title="Hitam"
+                data-color="Hitam"
+              ></div>
+              <div
+                class="color-dot"
+                style="background-color: maroon"
+                title="Maroon"
+                data-color="Maroon"
+              ></div>
+              <div
+                class="color-dot"
+                style="background-color: grey"
+                title="Abu-abu"
+                data-color="Abu-abu"
+              ></div>
+              <div
+                class="color-dot"
+                style="background-color: beige"
+                title="Krem"
+                data-color="Krem"
+              ></div>
+              <span class="color-more">+5 Warna</span>
+            </div>
+
+            <a href="#" class="btn-detail" data-toggle-color-detail
+              >PILIH WARNA</a
+            >
+
+            <div class="color-detail-popup">
+              <p class="detail-title">Warna Lain:</p>
+              <div class="color-options-expanded">
+                <div
+                  class="color-dot"
+                  style="background-color: white"
+                  title="Putih"
+                  data-color="Putih"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: navy"
+                  title="Navy"
+                  data-color="Navy"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: pink"
+                  title="Pink"
+                  data-color="Pink"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: yellow"
+                  title="Kuning"
+                  data-color="Kuning"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: #8b4513"
+                  title="Coklat Tua"
+                  data-color="Coklat Tua"
+                ></div>
+              </div>
+            </div>
+
+            <button class="btn-cart add-to-cart">TAMBAH KE KERANJANG</button>
+          </div>
+
+          <div
+            class="product-card"
+            data-product-id="P002"
+            data-product-name="Pasmina Voal"
+            data-product-price="40000"
+          >
+            <img
+              src="images/pasmina-voal.jpg"
+              alt="Pasmina Voal"
+              class="product-image"
+            />
+            <h4 class="product-name">Pasmina Voal</h4>
+            <p class="product-price">Rp 40.000</p>
+            <div class="color-options">
+              <div
+                class="color-dot active"
+                style="background-color: navy"
+                title="Navy"
+                data-color="Navy"
+              ></div>
+              <div
+                class="color-dot"
+                style="background-color: #e0b0d3"
+                title="Dusty Rose"
+                data-color="Dusty Rose"
+              ></div>
+              <div
+                class="color-dot"
+                style="background-color: #b0c9a9"
+                title="Sage Green"
+                data-color="Sage Green"
+              ></div>
+              <div
+                class="color-dot"
+                style="background-color: #8b572a"
+                title="Moka"
+                data-color="Moka"
+              ></div>
+              <span class="color-more">+8 Warna</span>
+            </div>
+
+            <a href="#" class="btn-detail" data-toggle-color-detail
+              >PILIH WARNA</a
+            >
+            <div class="color-detail-popup">
+              <p class="detail-title">Warna Lain:</p>
+              <div class="color-options-expanded">
+                <div
+                  class="color-dot"
+                  style="background-color: black"
+                  title="Hitam"
+                  data-color="Hitam"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: purple"
+                  title="Ungu"
+                  data-color="Ungu"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: teal"
+                  title="Teal"
+                  data-color="Teal"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: lightblue"
+                  title="Biru Muda"
+                  data-color="Biru Muda"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: coral"
+                  title="Coral"
+                  data-color="Coral"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: darkgrey"
+                  title="Abu Tua"
+                  data-color="Abu Tua"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: #d1b19a"
+                  title="Crem Muda"
+                  data-color="Crem Muda"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: darkgreen"
+                  title="Hijau Gelap"
+                  data-color="Hijau Gelap"
+                ></div>
+              </div>
+            </div>
+
+            <button class="btn-cart add-to-cart">TAMBAH KE KERANJANG</button>
+          </div>
+
+          <div
+            class="product-card"
+            data-product-id="P003"
+            data-product-name="Pasmina Kaos"
+            data-product-price="38000"
+          >
+            <img
+              src="images/pasmina-kaos.jpg"
+              alt="Pasmina Kaos"
+              class="product-image"
+            />
+            <h4 class="product-name">Pasmina Kaos</h4>
+            <p class="product-price">Rp 38.000</p>
+            <div class="color-options">
+              <div
+                class="color-dot active"
+                style="background-color: white"
+                title="Putih"
+                data-color="Putih"
+              ></div>
+              <div
+                class="color-dot"
+                style="background-color: black"
+                title="Hitam"
+                data-color="Hitam"
+              ></div>
+              <div
+                class="color-dot"
+                style="background-color: #c8a2c8"
+                title="Lilac"
+                data-color="Lilac"
+              ></div>
+              <div
+                class="color-dot"
+                style="background-color: brown"
+                title="Coklat"
+                data-color="Coklat"
+              ></div>
+              <span class="color-more">+6 Warna</span>
+            </div>
+
+            <a href="#" class="btn-detail" data-toggle-color-detail
+              >PILIH WARNA</a
+            >
+            <div class="color-detail-popup">
+              <p class="detail-title">Warna Lain:</p>
+              <div class="color-options-expanded">
+                <div
+                  class="color-dot"
+                  style="background-color: darkred"
+                  title="Merah Tua"
+                  data-color="Merah Tua"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: olive"
+                  title="Olive"
+                  data-color="Olive"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: maroon"
+                  title="Maroon"
+                  data-color="Maroon"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: navy"
+                  title="Navy"
+                  data-color="Navy"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: lightgrey"
+                  title="Abu Muda"
+                  data-color="Abu Muda"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: #f7e9b0"
+                  title="Krem Muda"
+                  data-color="Krem Muda"
+                ></div>
+              </div>
+            </div>
+
+            <button class="btn-cart add-to-cart">TAMBAH KE KERANJANG</button>
+          </div>
+
+          <div
+            class="product-card"
+            data-product-id="P004"
+            data-product-name="Bergo Hamida"
+            data-product-price="25000"
+          >
+            <img
+              src="images/bergo-hamidah.jpg"
+              alt="Bergo Hamida"
+              class="product-image"
+            />
+            <h4 class="product-name">Bergo Hamida</h4>
+            <p class="product-price">Rp 25.000</p>
+            <div class="color-options">
+              <div
+                class="color-dot active"
+                style="background-color: darkgreen"
+                title="Hijau Tua"
+                data-color="Hijau Tua"
+              ></div>
+              <div
+                class="color-dot"
+                style="background-color: lightpink"
+                title="Pink Muda"
+                data-color="Pink Muda"
+              ></div>
+              <div
+                class="color-dot"
+                style="background-color: cornflowerblue"
+                title="Biru Muda"
+                data-color="Biru Muda"
+              ></div>
+              <div
+                class="color-dot"
+                style="background-color: darkred"
+                title="Merah Tua"
+                data-color="Merah Tua"
+              ></div>
+              <span class="color-more">+10 Warna</span>
+            </div>
+
+            <a href="#" class="btn-detail" data-toggle-color-detail
+              >PILIH WARNA</a
+            >
+            <div class="color-detail-popup">
+              <p class="detail-title">Warna Lain:</p>
+              <div class="color-options-expanded">
+                <div
+                  class="color-dot"
+                  style="background-color: black"
+                  title="Hitam"
+                  data-color="Hitam"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: white"
+                  title="Putih"
+                  data-color="Putih"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: #ffcc99"
+                  title="Salem"
+                  data-color="Salem"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: #9966cc"
+                  title="Ungu Tua"
+                  data-color="Ungu Tua"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: #663300"
+                  title="Coklat Gelap"
+                  data-color="Coklat Gelap"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: teal"
+                  title="Teal"
+                  data-color="Teal"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: grey"
+                  title="Abu-abu"
+                  data-color="Abu-abu"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: yellow"
+                  title="Kuning"
+                  data-color="Kuning"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: orange"
+                  title="Oranye"
+                  data-color="Oranye"
+                ></div>
+                <div
+                  class="color-dot"
+                  style="background-color: navy"
+                  title="Navy"
+                  data-color="Navy"
+                ></div>
+              </div>
+            </div>
+
+            <button class="btn-cart add-to-cart">TAMBAH KE KERANJANG</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tentang-kami" class="info-section about-section">
+      <div class="container">
+        <h2>Tentang IrmaHijab.Daily</h2>
+        <div class="about-content">
+          <p>
+            Didirikan pada tahun 2023, IrmaHijab.Daily lahir dari kecintaan akan
+            fashion muslimah yang praktis dan elegan. Kami percaya bahwa setiap
+            wanita berhak tampil menawan tanpa mengorbankan kenyamanan.
+          </p>
+          <p>
+            Kami berkomitmen menyediakan koleksi hijab **Voal, Paris, dan
+            Pashmina Kaos, bergo hamidah** dengan kualitas terbaik, pemilihan
+            warna yang trendi, dan harga yang terjangkau. Fokus kami adalah pada
+            kualitas jahitan dan bahan premium agar hijab tetap tegak dan nyaman
+            dipakai seharian.
+          </p>
+          <p class="highlight-text">
+            Motto kami: **"Elegansi Harian, Kenyamanan Sepanjang Hari."**
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="info-section contact-section">
+      <div class="container">
+        <h2>Hubungi Kami</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h4>Informasi Toko:</h4>
+            <p>
+              📍 Alamat: Desa olang kecamatan ponrang selatan kabupaten luwu.
+            </p>
+            <p>📧 Email: support@irmahijab.daily.com</p>
+            <p>📞 Telepon: (021) 1234 5678</p>
+            <p>💬 WhatsApp: +62 812 3456 7890</p>
+          </div>
+          <div class="contact-form-placeholder">
+            <p>
+              Untuk pertanyaan cepat, Anda dapat mengirim pesan melalui WhatsApp
+              atau Email di atas. Kami akan merespon secepatnya!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 IrmaHijab.Daily. Semua Hak Cipta Dilindungi.</p>
+      </div>
+    </footer>
+
+    <div id="cartModal" class="modal">
+      <div class="modal-content">
+        <span
+          class="close-button"
+          id="closeModalButton"
+          onclick="toggleCartModal()"
+          >&times;</span
+        >
+        <h3>Keranjang Belanja Anda</h3>
+        <div id="cartItemsList">
+          <p>Keranjang kosong.</p>
+        </div>
+        <div class="cart-summary-footer">
+          <p>Total Item: <span id="modalTotalItems">0</span></p>
+          <p>Total Harga: <span id="modalTotalPrice">Rp 0</span></p>
+        </div>
+        <button id="checkoutButton" class="btn-checkout">
+          Lanjutkan ke Pembayaran
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
